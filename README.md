@@ -1,6 +1,7 @@
-Playing around with react-bootstrap components.
+Building website for local business.
 
-Check it out at https://arcane-headland-80607.herokuapp.com/
+Automobile Body Repair and Paint Shop:
+https://www.yellowpages.com/arlington-wi/mip/the-paint-doctor-452223755
 
 ### Development
 
