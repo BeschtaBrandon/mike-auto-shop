@@ -1,7 +1,12 @@
-export const formatPercent = value => {
-  return value ? parseFloat(value * 100).toFixed(1) + ' %' : '';
-}
+export function formatPhone(phone) {
+    //normalize string and remove all unnecessary characters
+    phone = phone.replace(/[^\d]/g, "");
 
-export const formatCurrency = value => {
-  return value ? '$ ' + parseFloat(value).toFixed(2) : '';
+    //check if number length equals to 10
+    if (phone.length == 10) {
+        //reformat and return phone number
+        return phone.replace(/(\d{3})(\d{3})(\d{4})/, "($1)-$2-$3");
+    }
+
+    return null;
 }

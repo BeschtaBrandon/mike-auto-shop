@@ -1,47 +1,45 @@
-import React, { Component } from 'react';
-
+import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import './NavBar.scss';
-
-import classNames from 'classnames';
 import { Nav } from 'react-bootstrap';
 
-class NavBar extends Component {
+const NavBar = () => {
+  const { t } = useTranslation();
+  const [activeKey, setActiveKey] = useState('');
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      activeKey: ''
-    };
+  const handleNavSelect = eventKey => {
+    setActiveKey(eventKey);
   }
 
-  setActiveKey = activeKey => {
-    this.setState({activeKey});
-  }
-
-  render () {
-
-    const navItemClassName = classNames({
-      'active': this.state.activeKey
-    });
-
-    return (
-      <Nav
-        activeKey="/"
-        onSelect={ selectedKey => this.setActiveKey(selectedKey) }
-      >
-        <Nav.Item className="ml-5">
-          <Nav.Link className={this.state.active === 'homeKey' ? navItemClassName : ''} href="/" eventKey="homeKey">
-            <i className="fas fa-home" />
-          </Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link href="/about" eventKey="workKey">
-            About
-          </Nav.Link>
-        </Nav.Item>
-      </Nav>
-    );
-  }
+  return (
+    <Nav
+      activeKey={activeKey}
+      as="ul"
+      defaultActiveKey="/"
+      onSelect={handleNavSelect}
+    >
+      <Nav.Item as="li">
+        <Nav.Link href="/">
+          {t('nav.home')}
+        </Nav.Link>
+      </Nav.Item>
+      <Nav.Item as="li">
+        <Nav.Link eventKey="about" href="/about">
+          {t('nav.about')}
+        </Nav.Link>
+      </Nav.Item>
+      <Nav.Item as="li">
+        <Nav.Link href="/services" eventKey="services">
+          {t('nav.services')}
+        </Nav.Link>
+      </Nav.Item>
+      <Nav.Item as="li">
+        <Nav.Link href="/gallery" eventKey="gallery">
+          {t('nav.gallery')}
+        </Nav.Link>
+      </Nav.Item>
+    </Nav>
+  );
 }
 
 export default NavBar;

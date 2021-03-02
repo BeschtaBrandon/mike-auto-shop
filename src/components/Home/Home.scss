@@ -10,6 +10,13 @@
   }
 }
 
+@media only screen and (max-width: 772px) {
+  .col-12 {
+    display: block;
+    margin-left: 27px;
+  }
+}
+
 .home-content.middle {
   margin: 20px 0px 20px 0px;
 }
@@ -17,4 +24,8 @@
 .jumbotron.jumbotron-fluid {
   background-color: #c3daf1;
   margin-top: 10px;
+}
+
+h2 {
+  color: #000099;
 }

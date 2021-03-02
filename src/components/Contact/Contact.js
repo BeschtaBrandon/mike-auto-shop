@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Breadcrumb } from 'react-bootstrap';
+import { PHONE_NUMBER } from '../../shared/constants';
 
 import './Contact.scss';
 
@@ -11,7 +12,7 @@ const Contact = () => {
       <h2>
         {t('contact.contact-us')}
         <i className="fas fa-envelope" />
-    </h2>
+      </h2>
     );
   }
 
@@ -24,7 +25,9 @@ const Contact = () => {
             {t('contact.email')}
           </Breadcrumb.Item>
           <Breadcrumb.Item>
-            {t('contact.phone')}&nbsp;608-635-0323
+            {t('contact.phone')}
+            &nbsp;
+            { PHONE_NUMBER }
           </Breadcrumb.Item>
         </Breadcrumb>
       </div>

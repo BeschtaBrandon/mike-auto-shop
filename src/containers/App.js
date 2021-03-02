@@ -10,6 +10,8 @@ import Home from '../components/Home/Home';
 import Gallery from '../components/Gallery/Gallery';
 import Services from '../components/Services/Services';
 import NavBar from '../components/NavBar/NavBar';
+import { PHONE_NUMBER } from '../shared/constants';
+import { formatPhone } from '../shared/formats';
 import './App.scss';
 
 const App = () => {
@@ -30,7 +32,7 @@ const App = () => {
         <ul>
           <li>&#169;{current_date}</li>
           <li><strong>Paint Doctor Auto</strong></li>
-          <li><strong>(608)-555-6666</strong></li>
+          <li><strong>{formatPhone(PHONE_NUMBER)}</strong></li>
         </ul>
       </footer>
     </div>

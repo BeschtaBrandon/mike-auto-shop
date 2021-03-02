@@ -26,7 +26,7 @@ const Home = () => {
         <Col xs={12}>
         {HOME_CARDS.map(card => {
           return (
-            <Card>
+            <Card key={card.id}>
               <Card.Img
                 variant="top"
                 src={card.imageUrl}
@@ -86,7 +86,7 @@ const Home = () => {
       <Jumbotron fluid>
         <Container>
           <h1>{t('contact.paint-doctor')}</h1>
-          <p>
+          <p className='lead'>
             {t('home.intro-body')}
           </p>
         </Container>

@@ -1,18 +1,40 @@
 {
+  "about": {
+    "intro": "Welcome to The Paint Doctor! We are family owned and have been in business for over 25 years. We can handle all your auto and marine body needs. Let us make your car or boat look new again. We also restore antique vehicles, gas pumps, and everything collectible. We have very reasonable rates, extremely fast service and can work with your insurance company directly. So give us a call today!",
+    "header": "About Us"
+  },
   "home": {
     "header": "Specialize in paint, detail, restoration.",
     "intro-body": "We can handle all your auto and marine body needs. Let us make your car or boat look new again. We also restore antique vehicles, gas pumps, and everything collectible. We have very reasonable rates, extremely fast service and can work with your insurance company directly. So give us a call today at (608)-635-0323",
-    "main-paragraph": "Whether it's auto paint or collision repair, Paint doctor auto offers easy, affordable and reliable paint and repair services that can turn the car you drive back into the car you love.",
-    "about-us": "Welcome to The Paint Doctor! We are family owned and have been in business for over 25 years. We can handle all your auto and marine body needs. Let us make your car or boat look new again. We also restore antique vehicles, gas pumps, and everything collectible. We have very reasonable rates, extremely fast service and can work with your insurance company directly. So give us a call today!"
+    "main-paragraph": "Whether it's auto paint or collision repair, Paint doctor auto offers easy, affordable and reliable paint and repair services that can turn the car you drive back into the car you love."
   },
   "contact": {
+    "street-address": "209 Main Street",
+    "city": "Arlington, WI 53911",
     "contact": "Contact",
     "contact-us": "Contact Us",
-    "contact-card": "There are many ways to get in touch with the paint doctor",
+    "contact-card": "Stay in-touch with the paint doctor located in Arlington, WI 53911",
     "contact-description": "Reach us by phone or email",
+    "store-open-hours": "Monday - Friday 8am - 5pm CST",
+    "store-closed-hours": "Saturday - Sunday Closed",
+    "store-info": "Store Information",
     "email": "Email",
     "hours": "Hours",
     "phone": "Phone:",
     "paint-doctor": "The Paint Doctor"
+  },
+  "nav": {
+    "about": "About",
+    "home": "Home",
+    "services": "Services",
+    "gallery": "Gallery"
+  },
+  "services": {
+    "detail": "Auto Detail",
+    "painting": "On-site painting",
+    "repairs": "Repairs",
+    "claims": "Insurance Claims",
+    "restore": "Restoration",
+    "marine": "Marine"
   }
 }
