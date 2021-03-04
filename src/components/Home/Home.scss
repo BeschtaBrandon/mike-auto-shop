@@ -10,6 +10,12 @@
   }
 }
 
+.store-info {
+  a.google-maps-directions {
+    display: block;
+  }
+}
+
 @media only screen and (max-width: 772px) {
   .col-12 {
     display: block;

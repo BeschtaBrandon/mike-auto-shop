@@ -23,4 +23,4 @@ export const HOME_CARDS = [
     buttonText: 'Gallery',
     ahref: '/gallery'
   }
-]
+];

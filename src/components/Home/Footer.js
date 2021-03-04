@@ -1,6 +1,9 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { PHONE_NUMBER } from '../../shared/constants';
+import {
+  googleMapDirections,
+  PHONE_NUMBER
+} from '../../shared/constants';
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -32,7 +35,7 @@ const Footer = () => {
             {t('contact.store-closed-hours')}
           </span>
         </div>
-        <div className="col-md-4">
+        <div className="col-md-4 store-info">
           <h2>{t('contact.store-info')}</h2>
           <hr />
           <strong>
@@ -46,6 +49,15 @@ const Footer = () => {
           {t('contact.phone')}
           {' '}
           { PHONE_NUMBER }
+          <a
+            className='google-maps-directions'
+            href={googleMapDirections}
+          >
+            <i className='fas fa-map-marker' aria-hidden="true" />
+            {' '}
+            {t('home.get-directions')}
+          </a>
+
         </div>
       </div>
     )
