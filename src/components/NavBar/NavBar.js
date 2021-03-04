@@ -38,6 +38,9 @@ const NavBar = () => {
           {t('nav.gallery')}
         </Nav.Link>
       </Nav.Item>
+      <Nav.Item as="li">
+        <span>{t('contact.call-us')}</span>
+      </Nav.Item>
     </Nav>
   );
 }

@@ -16,7 +16,7 @@ const Footer = () => {
           </p>
           <div className="footerSocialLinks">
             <a href="/contact">
-              <i className="fa fa-envelope" aria-hidden="true" />
+              <i className="fas fa-address-card" aria-hidden="true" />
             </a>
           </div>
           <br/>
@@ -33,19 +33,19 @@ const Footer = () => {
           </span>
         </div>
         <div className="col-md-4">
-            <h2>{t('contact.store-info')}</h2>
-            <hr />
-            <strong>
-              {t('contact.paint-doctor')}
-            </strong>
-            <br />
-            {t('contact.street-address')}
-            <br />
-            {t('contact.city')}
-            <br />
-            {t('contact.phone')}
-            {' '}
-            { PHONE_NUMBER }
+          <h2>{t('contact.store-info')}</h2>
+          <hr />
+          <strong>
+            {t('contact.paint-doctor')}
+          </strong>
+          <br />
+          {t('contact.street-address')}
+          <br />
+          {t('contact.city')}
+          <br />
+          {t('contact.phone')}
+          {' '}
+          { PHONE_NUMBER }
         </div>
       </div>
     )

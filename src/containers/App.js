@@ -31,7 +31,7 @@ const App = () => {
       <footer>
         <ul>
           <li>&#169;{current_date}</li>
-          <li><strong>Paint Doctor Auto</strong></li>
+          <li><strong>{t('contact.paint-doctor-auto')}</strong></li>
           <li><strong>{formatPhone(PHONE_NUMBER)}</strong></li>
         </ul>
       </footer>

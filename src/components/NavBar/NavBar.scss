@@ -14,6 +14,11 @@
       }
     }
   }
+  .nav-item:last-of-type {
+    position: absolute;
+    right: 45px;
+    margin: 10px 0px 0px 0px;
+  }
 
   .pull-right {
     display: flex;
@@ -22,9 +27,15 @@
 
 @media (max-width: 768px) {
   .nav {
+    display: block;
+
     .float-right {
       display: flex;
       margin-left: 35%;
     }
+    .nav-item:last-of-type {
+      display: none;
+    }
+
   }
 }

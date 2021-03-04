@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Breadcrumb } from 'react-bootstrap';
 import { PHONE_NUMBER } from '../../shared/constants';
@@ -21,7 +21,7 @@ const Contact = () => {
       <div>
         <p className="lead">{t('contact.contact-description')}</p>
         <Breadcrumb>
-          <Breadcrumb.Item href="mailto:example@gmail.com">
+          <Breadcrumb.Item href="mailto:mike@thepaintdoctorauto.com">
             {t('contact.email')}
           </Breadcrumb.Item>
           <Breadcrumb.Item>

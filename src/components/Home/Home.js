@@ -2,15 +2,12 @@ import React from 'react';
 import {
   Card,
   Jumbotron,
-  Button,
   Col,
   Container,
   Image,
-  Row,
-  ListGroup
+  Row
 } from 'react-bootstrap';
 import { Link } from "react-router-dom";
-import moment from 'moment';
 import { HOME_CARDS } from './constants';
 import { useTranslation } from 'react-i18next';
 import Footer from './Footer';

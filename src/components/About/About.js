@@ -22,6 +22,7 @@ const About = () => {
   const renderGoogleMapFrame = () => {
     return (
       <iframe
+        title="google-maps"
         src={iframeSource}
         width="400"
         height="300"

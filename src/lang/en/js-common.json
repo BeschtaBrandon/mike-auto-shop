@@ -11,17 +11,19 @@
   "contact": {
     "street-address": "209 Main Street",
     "city": "Arlington, WI 53911",
+    "call-us": "Call us at (608)-635-0323",
     "contact": "Contact",
     "contact-us": "Contact Us",
     "contact-card": "Stay in-touch with the paint doctor located in Arlington, WI 53911",
     "contact-description": "Reach us by phone or email",
     "store-open-hours": "Monday - Friday 8am - 5pm CST",
     "store-closed-hours": "Saturday - Sunday Closed",
-    "store-info": "Store Information",
+    "store-info": "Location",
     "email": "Email",
     "hours": "Hours",
     "phone": "Phone:",
-    "paint-doctor": "The Paint Doctor"
+    "paint-doctor": "The Paint Doctor",
+    "paint-doctor-auto": "Paint Doctor Auto"
   },
   "nav": {
     "about": "About",
